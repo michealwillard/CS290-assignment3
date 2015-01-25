@@ -5,6 +5,10 @@ End: Sat, 24 Jan 2015 12:01:41 -0800
 Tasks: Initial Commit, setting up repository and log
 
 Start: Sat, 24 Jan 2015 17:30:47 -0800 
-End: Sat, 24 Jan 2015 18:44:?? -0800 
-Tasks: Implemented isNull() on variables.js, uselessFunction() on functions.js, returnObjectLiteral on objects.js
+End: Sat, 24 Jan 2015 18:44:45 -0800 
+Tasks: Implemented  and isNull() on variables.js; uselessFunction() on functions.js; returnObjectLiteral on objects.js; updated log.txt
+
+Start: Sat, 24 Jan 2015 19:02:57 -0800 
+End: Sat, 24 Jan 2015 19:15:23 -0800 
+Tasks: Completed variables.js, updated log.txt
 
