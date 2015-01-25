@@ -13,6 +13,9 @@
 */
 
 //your code here
+function uselessFunction() {
+  return null;
+}
 
 //end your code
 
@@ -30,6 +33,10 @@ var barType = typeof bar;
 */
 
 //your code here
+bar = function () {
+  
+}
+bar();
 
 //end your code
 

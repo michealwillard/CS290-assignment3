@@ -1,1 +1,10 @@
-You log goes in this  file.
+Author: michealwillard <willardm@onid.oregonstate.edu>
+
+Start: Sat, 24 Jan 2015 11:34:23 -0800
+End: Sat, 24 Jan 2015 12:01:41 -0800 
+Tasks: Initial Commit, setting up repository and log
+
+Start: Sat, 24 Jan 2015 17:30:47 -0800 
+End: Sat, 24 Jan 2015 18:44:?? -0800 
+Tasks: Implemented isNull() on variables.js, uselessFunction() on functions.js, returnObjectLiteral on objects.js
+

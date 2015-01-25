@@ -42,6 +42,12 @@ return true if c is null, false otherwise
 */
 function isNull(c) {
   //your code here
-  return undefined;
+  if (c === null && c !== undefined) {
+    return true;
+  }
+  else {
+    return false;
+  }
+  //return undefined;
   //end your code
 }
