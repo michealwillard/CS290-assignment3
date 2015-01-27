@@ -16,3 +16,6 @@ Start: Sun, 25 Jan 2015 10:59:46 -0800
 End: Sun, 25 Jan 2015 12:49:37 -0800 
 Tasks: Completed bar function and started parseGit in functions.js, updated log.txt
 
+Start: Mon, 26 Jan 2015 19:01:32 -0800 
+End: Mon, 26 Jan 2015 19:18:22 -0800 
+Tasks: Completed functions.js, updated log.txt
