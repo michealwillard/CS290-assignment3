@@ -39,7 +39,37 @@ function returnObjectLiteral() {
 */
 
 //your code here
-
+function MessageLog(user) {
+  this.user = user;
+  // Arrays
+  this.sentMessages = [];
+  this.recMessages = [];
+  // Local Variables for MessageLog
+  var sentTotal = 0;
+  var recTotal = 0;
+  this.logMessage = function(messageText, direction) {
+    if (direction === 0) {
+      if (this.sentMessages.length > 5) {
+        this.sentMessages.pop(); // Remove last element from array
+      }
+      this.sentMessages.unshift(messageText); // Add element to beginning of array
+      sentTotal++;
+    }
+    else if (direction === 1) {
+      if (this.recMessages.length > 5) {
+        this.recMessages.pop();
+      }
+      this.recMessages.unshift(messageText);
+      recTotal++;
+    }
+    else {
+      return undefined;
+    }
+  }
+  this.getSentMessage = function(n) {return this.sentMessages[n];};
+  this.totalSent = function() {return sentTotal;};
+  this.totalReceived = function() {return recTotal;};
+}
 //end your code
 
 /**
@@ -48,7 +78,9 @@ function returnObjectLiteral() {
 * received.
 */
 //your code here
-
+MessageLog.prototype.lastReceivedMessage = function() {
+  return this.recMessages[0];
+};
 //end your code
 
 /**
@@ -58,5 +90,9 @@ function returnObjectLiteral() {
 */
 
 //your code here
+var myLog = new MessageLog('BlackHatGuy');
+myLog.logMessage('foo', 1);
+myLog.logMessage('bar', 1);
+myLog.logMessage('baz', 1);
 
 //end your code
