@@ -32,7 +32,7 @@ var barType = typeof bar;
 */
 
 //your code here
-bar = function (doubleArray) {
+bar = function(doubleArray) {
   //float[] floatArray = new float[doubleArray.length];
   for (var i = 0; i < doubleArray.length; i++) {
     //floatArray[i] = (float) doubleArray[i];
@@ -44,7 +44,7 @@ bar = function (doubleArray) {
     }
   }
   return true;
-}
+};
 //end your code
 
 /**
@@ -96,7 +96,6 @@ function parseGit(logArray) {
     // Create object
     gitArray[i] = new GitLog(_hash, _date, _message);
   }
-  
   return gitArray;
 }
 //end your code

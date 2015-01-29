@@ -11,7 +11,7 @@
 function returnObjectLiteral() {
   //your code here
   return {type: 'Goldfish', brand: 'Pepperidge Farm', flavor: 'Cheddar', count: 2000};
-  //return undefined; //Modify ONLY this line
+  //Modify ONLY this line
   //end your code
 }
 
@@ -52,7 +52,8 @@ function MessageLog(user) {
       if (this.sentMessages.length > 5) {
         this.sentMessages.pop(); // Remove last element from array
       }
-      this.sentMessages.unshift(messageText); // Add element to beginning of array
+      // Add element to beginning of array
+      this.sentMessages.unshift(messageText);
       sentTotal++;
     }
     else if (direction === 1) {
@@ -65,7 +66,7 @@ function MessageLog(user) {
     else {
       return undefined;
     }
-  }
+  };
   this.getSentMessage = function(n) {return this.sentMessages[n];};
   this.totalSent = function() {return sentTotal;};
   this.totalReceived = function() {return recTotal;};
@@ -75,7 +76,7 @@ function MessageLog(user) {
 /**
 * Add a method to the MessageLog prototype:
 * lastReceivedMessage() - returns the message text of the last message the user
-* received.
+* received
 */
 //your code here
 MessageLog.prototype.lastReceivedMessage = function() {
